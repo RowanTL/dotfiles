@@ -1,0 +1,51 @@
+theme = "doom_acario_dark"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line
+
+[editor.cursor-shape]
+# insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "|"
+render = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[editor.lsp]
+display-progress-messages = true
+
+[keys.normal]
+n = "move_line_down"
+N = "join_selections"
+"A-N" = "join_selections_space"
+e = "move_line_up"
+E = "keep_selections"
+"A-E" = "remove_selections"
+i = "move_char_right"
+I = "no_op"
+
+w = "move_next_word_end"
+W = "move_next_long_word_end"
+j = "move_next_word_start"
+J = "move_next_long_word_start"
+k = "search_next"
+K = "search_prev"
+l = "insert_mode"
+L = "insert_at_line_start" 
+
+[keys.select]
+i = "extend_char_right"
+e = "extend_visual_line_up"
+n = "extend_visual_line_down"
+E = "extend_line_up" # what does this do?
+N = "extend_line_down"
