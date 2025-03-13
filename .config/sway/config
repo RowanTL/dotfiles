@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term kitty
 # Your preferred application launcher
 set $menu rofi -show drun -show-icons
 
@@ -225,9 +225,9 @@ bar {
     }
 }
 
-# Ketboard configs
+# Keyboard configs
 
-input type=keyboard {
+input type:keyboard {
     xkb_layout us,us
     xkb_variant colemak,
     xkb_options grp:alt_shift_toggle
