@@ -227,6 +227,6 @@ input type:keyboard {
     xkb_options grp:alt_shift_toggle
 }
 
-exec nm-applet
+exec nm-applet --indicator
 
 include /etc/sway/config.d/*
