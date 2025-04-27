@@ -26,6 +26,9 @@ python
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# Rowan Config -----------------------------------------------------------------
+set auto-load safe-path /
+
 # Imports ----------------------------------------------------------------------
 
 import ast
