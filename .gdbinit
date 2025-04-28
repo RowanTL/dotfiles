@@ -2388,3 +2388,14 @@ python import sys; sys.modules['readline'] = None
 # Local Variables:
 # mode: python
 # End:
+
+# Rowan dashboard mods
+
+# disable these
+dashboard registers
+dashboard assembly
+dashboard stack
+dashboard threads
+
+# Make code window larger
+dashboard source -style height 20
