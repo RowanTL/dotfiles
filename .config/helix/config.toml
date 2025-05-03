@@ -25,6 +25,9 @@ left = ["mode", "spinner", "version-control", "file-name"]
 [editor.lsp]
 display-progress-messages = true
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal]
 n = "move_line_down"
 N = "join_selections"
