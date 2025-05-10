@@ -6,6 +6,10 @@
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
 # https://github.com/nushell/nu_scripts/tree/main/themes
+
+# Rowan specific
+# use ~/.config/nu_scripts/modules/virtual_environments/conda.nu
+
 let dark_theme = {
     # color for nushell primitives
     separator: white

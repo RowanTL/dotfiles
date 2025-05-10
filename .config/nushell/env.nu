@@ -2,6 +2,9 @@
 #
 # version = "0.99.1"
 
+# Rowan edits
+# $env.SUDO_EDITOR = /usr/bin/hx
+
 def create_left_prompt [] {
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
