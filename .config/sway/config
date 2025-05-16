@@ -84,7 +84,7 @@ exec swayidle -w \
     bindsym $mod+Shift+l exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Initiate swaylock
-    bindsym $mod+l exec swaylock
+    bindsym $mod+l exec swaylock -f -c 000000
 #
 # Moving around:
 #
