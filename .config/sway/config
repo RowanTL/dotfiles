@@ -88,7 +88,7 @@ for_window [app_id=".*"] inhibit_idle fullscreen
     bindsym $mod+Shift+l exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Initiate swaylock
-    bindsym $mod+l exec swaylock
+    bindsym $mod+l exec swaylock -f -c 000000
 #
 # Moving around:
 #
@@ -227,7 +227,7 @@ bar {
 
 input type:keyboard {
     xkb_layout us,us
-    xkb_variant colemak,
+    xkb_variant ,colemak
     xkb_options grp:alt_shift_toggle
 }
 
