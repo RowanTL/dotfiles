@@ -1,0 +1,145 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "e": "vim::Up"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "f": "vim::NextWordEnd"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "t": [
+        "vim::PushFindForward",
+        {
+          "before": false,
+          "multiline": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g e": [
+        "vim::Up",
+        {
+          "display_lines": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g f": "vim::PreviousWordEnd"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g t": "editor::OpenSelectedFilename"
+    }
+  },
+  {
+    "context": "(vim_mode == helix_normal && !menu)",
+    "bindings": {
+      "g k": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "n": "vim::Down"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "k": "vim::MoveToNextMatch"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g n": [
+        "vim::Down",
+        {
+          "display_lines": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g k": "vim::SelectNextMatch"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "i": "vim::Right"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "j": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g j": null
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-n": "vim::Down"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-j": null
+    }
+  },
+  {
+    "context": "(vim_mode == helix_normal && !menu)",
+    "bindings": {
+      "j": "vim::HelixInsert"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "j": "vim::InsertBefore"
+    }
+  }
+]
