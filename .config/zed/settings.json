@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-flash"
+    }
+  },
   "base_keymap": "VSCode",
   "vim_mode": false,
   "ui_font_size": 16,
@@ -20,5 +27,14 @@
     "diagnostics": false,
     "metrics": false
   },
-  "helix_mode": true
+  "helix_mode": true,
+  "languages": {
+    "Python": {
+      // "language_servers": ["ruff", "ty"]
+      "language_servers": ["ruff"]
+      // Or, if there are other language servers you want to use with Python
+      // "language_servers": ["pyright", "ruff"]
+    }
+  },
+  "show_edit_predictions": false
 }

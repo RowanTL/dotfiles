@@ -133,13 +133,73 @@
   {
     "context": "(vim_mode == helix_normal && !menu)",
     "bindings": {
-      "j": "vim::HelixInsert"
+      "l": "vim::HelixInsert"
+    }
+  },
+  {
+    "context": "(vim_mode == helix_normal && !menu)",
+    "bindings": {
+      "i": "vim::WrappingRight"
     }
   },
   {
     "context": "vim_mode == normal",
     "bindings": {
-      "j": "vim::InsertBefore"
+      "l": "vim::InsertBefore"
+    }
+  },
+  {
+    "context": "(vim_mode == helix_normal && !menu)",
+    "bindings": {
+      "g e": "vim::EndOfDocument"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g d": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "g shift-d": "editor::GoToDeclaration"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-w g d": "editor::GoToDefinitionSplit"
+    }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-w g shift-d": "editor::GoToTypeDefinitionSplit"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-l": "vim::InsertBefore"
+    }
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "shift-l": "vim::InsertFirstNonWhitespace"
+    }
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "shift-i": null
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-i": null
     }
   }
 ]
