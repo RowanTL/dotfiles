@@ -227,9 +227,17 @@ bar {
 
 input type:keyboard {
     xkb_layout us,us
-    xkb_variant colemak,
+    xkb_variant ,colemak
     xkb_options grp:alt_shift_toggle
 }
+
+# monitor setup
+# MSI
+output DP-1 mode 1920x1080@144Hz pos 0 0
+# Samsung
+output DP-2 mode 1366x768 pos -768 0 transform 90
+# AOP
+output HDMI-A-1 mode 1920x1080@60Hz pos 1920 0 transform 270
 
 exec nm-applet --indicator
 
