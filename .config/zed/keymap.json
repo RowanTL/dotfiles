@@ -201,5 +201,41 @@
     "bindings": {
       "shift-i": null
     }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w i": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w l": null
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w n": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w j": null
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w k": "workspace::NewFileSplitHorizontal"
+    }
+  },
+  {
+    "context": "(VimControl || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w e": "workspace::ActivatePaneUp"
+    }
   }
 ]
