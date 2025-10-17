@@ -37,7 +37,7 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     glow
-    qbittorrent
+    # qbittorrent
     protonvpn-gui
     discord
     nil
@@ -45,6 +45,7 @@
     signal-desktop-bin
     cloc
     # kile
+    watchexec
   ];
 
   programs.git = {
