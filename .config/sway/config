@@ -233,4 +233,8 @@ input type:keyboard {
 
 exec nm-applet --indicator
 
+# start kwallet so sway actually functions
+# fedora specific path, thanks random reddit post
+exec --no-startup-id /usr/libexec/pam_kwallet_init
+
 include /etc/sway/config.d/*
