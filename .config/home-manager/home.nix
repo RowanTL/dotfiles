@@ -46,6 +46,7 @@
     cloc
     # kile
     watchexec
+    sage
   ];
 
   programs.git = {
