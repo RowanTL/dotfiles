@@ -21,7 +21,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "Shades Of Purple (Super Dark)"
   },
   "telemetry": {
     "diagnostics": false,
@@ -30,8 +30,8 @@
   "helix_mode": true,
   "languages": {
     "Python": {
-      // "language_servers": ["ruff", "ty"]
-      "language_servers": ["ruff"]
+      "language_servers": ["ruff", "ty"]
+      // "language_servers": ["pylsp"]
       // Or, if there are other language servers you want to use with Python
       // "language_servers": ["pyright", "ruff"]
     }
