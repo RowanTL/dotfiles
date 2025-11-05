@@ -237,4 +237,8 @@ output HDMI-A-1 mode 1920x1080@60Hz pos 1920 0 transform 270
 
 exec nm-applet --indicator
 
+# start kwallet so sway actually functions
+# fedora specific path, thanks random reddit post
+exec --no-startup-id /usr/libexec/pam_kwallet_init
+
 include /etc/sway/config.d/*
