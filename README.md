@@ -4,6 +4,8 @@ This repo holds my dotfiles.
 
 ## Included dotfiles
 
+**Check the old_main branch for my colemak Helix configs**
+
 Helix Editor: I use colemak, the colemak keybindings can be found inside of
 `.config/helix/config.toml`.
 
