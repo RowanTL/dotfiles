@@ -46,14 +46,21 @@
     cloc
     # kile
     watchexec
-    sage
+    # sage
   ];
 
   programs.git = {
     enable = true;
-    userName = "Rowan Torbitzky-Lane";
-    userEmail = "rowan.a.tl@protonmail.com";
-    extraConfig = {
+    # userName = "Rowan Torbitzky-Lane";
+    # userEmail = "rowan.a.tl@protonmail.com";
+    # extraConfig = {
+      # core.hooksPath = ".githooks";
+    # };
+    settings = {
+      user = {
+        email = "rowan.a.tl@protonmail.com";
+        name = "Rowan Torbitzky-Lane";
+      };
       core.hooksPath = ".githooks";
     };
   };
